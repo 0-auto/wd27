@@ -1,0 +1,68 @@
+html,body{
+    font-size: 62.5%;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    background-color: #F3EDDF;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 3.2rem;
+    margin-bottom: 1em;
+    color: #6F4C23;
+
+    >span{
+        display: inline-block;
+        padding-left: 4.2rem;
+        font-size: 1.6rem;
+    }
+}
+h2{
+    font-size: 1.8rem;
+    color: #6F4C23;
+    border-bottom: 1px solid #D5CBBF;
+    padding: 0 0 0.5rem 0.5rem;
+    margin-bottom: 1em;
+}
+p{
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+}
+li>a{
+    font-size: 1.6rem;
+}
+
+header{
+    background-color: #fff;
+    padding: 3.6rem 0 1.6rem;
+
+    >p{
+        max-width: 1004px;
+        margin: 0 auto;
+        padding-left: 8%;
+        font-size: 2.4rem;
+        color: #6F4C23;
+    }
+    >nav{
+        max-width: 1004px;
+        margin: 0 auto;
+        >ul{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            column-gap: 4em;
+        }
+    }
+}
+main{
+    background-image: url(../images/cover_img.jpg);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
