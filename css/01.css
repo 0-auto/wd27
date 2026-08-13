@@ -16,6 +16,7 @@ h1{
     font-size: 3.2rem;
     margin-bottom: 1em;
     color: #6F4C23;
+    text-align: center;
 
     >span{
         display: inline-block;
@@ -33,9 +34,13 @@ h2{
 p{
     font-size: 1.4rem;
     margin-bottom: 1em;
+    line-height: 1.8;
 }
 li>a{
     font-size: 1.6rem;
+}
+small{
+    font-size: 1.2rem;
 }
 
 header{
@@ -61,8 +66,94 @@ header{
     }
 }
 main{
-    background-image: url(../images/cover_img.jpg);
+    background-image: url(https://0-auto.github.io/wd27/images/cover_img.jpg);
+    background-position: top center;
+    background-repeat: repeat-x;
+    background-size: auto 350px;
+    padding-top: 350px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+
+    #content{
+        flex: 0 1 61%;
+        max-width: 777px;
+        background-color: #fff;
+        padding: 4.6rem 3.2rem 3.6rem;
+    }
+    #item_menu{
+        flex: 0 1 18%;
+        max-width: 227px;
+        padding: 7rem 1.5rem;
+        background-color: #E8DDCF;
+
+        >h2{
+            font-size: 1.6rem;
+            margin-bottom: 3.6em;
+        }
+        >ul{
+            padding-left: 4rem;
+
+            >li{
+                margin-bottom: 3em;
+            }
+        }
+    }
+}
+
+#item{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+
+    >div{
+        flex: 0 1 45%;
+
+        >p:has(span){
+            text-align: right;
+            font-size: 2.4rem;
+            font-weight: 500;
+            margin: 1em 0 0.5em;
+
+            >span{
+                font-size: 1.4rem;
+            }
+        }
+        a{
+            display: block;
+            background-color: #A8B898;
+            color: #fff;
+            text-align: center;
+            padding: 1.4rem;
+        }
+    }
+    >p{
+        flex: 0 1 51%;
+    }
+}
+#concept{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 8rem 0 0;
+
+    >div{
+        flex: 0 1 44%;
+    }
+    >p{
+        flex: 0 1 52%;
+    }
+}
+#material{
+    padding: 5.5rem 0 0;
+}
+footer{
+    background-color: #fff;
+    border-top: 1px solid #F3EDDF;
+    padding: 2.5rem 0;
+
+    >p{
+        text-align: center;
+        margin-bottom: 0;
+    }
 }
