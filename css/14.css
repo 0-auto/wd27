@@ -1,0 +1,227 @@
+html,body{
+    font-size: 62.5%;
+    font-family: "Times New Roman","YuMincho","Hiragino Mincho ProN","Yu Mincho","MS PMincho",serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #666;
+    background-color: #fff;
+}
+main>div,
+#item,
+#nagosi,
+#minaduki,
+#recommend,
+footer>p{
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+    margin-bottom: 6rem;
+    padding: 2rem;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    >span:first-of-type{
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-right: 1em;
+    }
+    >span:nth-of-type(2){
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding-right: 0.5em;
+    }
+}
+h2{
+    font-size: 2.4rem;
+    font-weight: 500;
+    >span{
+        font-size: 1.8rem;
+        font-weight: 400;
+        display: inline-block;
+        padding-right: 1em;
+    }
+}
+h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.4em;
+}
+p,li{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    letter-spacing: 1%;
+}
+small{
+    font-size: 1.2rem;
+}
+
+body{
+    background-image: url(https://0-auto.github.io/wd27/images/bg_main.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 280px 1fr;
+    
+    >header{
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+    main{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    footer{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+}
+
+header{
+    position: sticky;
+    top: 0;
+    align-self: start;
+    height: 100dvh;
+    padding: 6.5rem 1.8rem 0;
+    background-color:rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    box-shadow: 2px 0 4px 0 #949494;
+
+    >nav{
+        padding-top: 15vh;
+
+        a{
+            display: block;
+            border-bottom: 1px solid #ccc;
+            font-size: 1.8rem;
+            font-weight: 500;
+            padding: 2rem 0 0 0;
+            color: #333;
+        }
+    }
+}
+main{
+    padding: 2rem 3.2rem;
+
+    >div{
+        background-image: url(../images/minaduki_main.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        padding-top: 37%;
+        padding-right: 3.2rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: baseline;
+        column-gap: 4em;
+
+        >p{
+            font-size: 2rem;
+            font-weight: 500;
+            >span{
+                font-size: 1.4rem;
+                font-weight: 400;
+                padding-right: 1em;
+            }
+        }
+    }
+}
+#item{
+
+    >h2{
+        letter-spacing: 20%;
+        margin-bottom: 1.5em;
+    }
+    #detail{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        >div{
+            flex: 0 1 50%;
+            >p{
+                margin-bottom: 1.2em;
+            }
+        }
+        >p{
+            flex: 0 1 48%;
+        }
+    }
+    >div{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        padding-top: 4rem;
+
+        h3{
+            margin-bottom: 1em;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+        #allergy{
+            flex: 0 1 25%;
+        }
+        #useby{
+            flex: 0 1 75%;
+        }
+    }
+}
+#nagosi,
+#minaduki{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 3rem;
+
+    >div{
+        flex: 0 1 50%;
+        >h2{
+            margin-bottom: 1em;
+        }
+        >p{
+            margin-bottom: 1em;
+        }
+    }
+    >p{
+        flex: 0 1 48%;
+    }
+}
+#minaduki{
+    flex-flow: row-reverse wrap;
+}
+#recommend{
+    >h2{
+        font-size: 1.8rem;
+        margin-bottom: 1em;
+    }
+    >ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        column-gap: 2%;
+
+        li{
+            flex: 0 1 94%;
+            text-align: center;
+        }
+    }
+}
+footer{
+    padding: 0 3.2rem;
+    >p{
+        text-align: center;
+        margin: 0;
+    }
+}
