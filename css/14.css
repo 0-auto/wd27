@@ -62,7 +62,7 @@ small{
 }
 
 body{
-    background-image: url(https://0-auto.github.io/wd27/images/bg_main.jpg);
+    background-image: url(../images/bg_main.jpg);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;
